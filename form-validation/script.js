@@ -51,7 +51,6 @@ const checkLength = (input, min, max) => {
 };
 
 // Check if passwords match
-
 const checkPasswordsMatch = (input1, input2) => {
   input1.value !== input2.value && showError(input2, 'Passwords do not Match');
 };
