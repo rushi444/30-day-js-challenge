@@ -53,8 +53,8 @@ const checkLength = (input, min, max) => {
 // Check if passwords match
 
 const checkPasswordsMatch = (input1, input2) => {
-    input1.value !== input2.value && showError(input2, 'Passwords do not Match')
-}
+  input1.value !== input2.value && showError(input2, 'Passwords do not Match');
+};
 
 // Get Field Name
 const getFieldName = input => {
@@ -68,5 +68,5 @@ form.addEventListener('submit', e => {
   checkLength(username, 3, 15);
   checkLength(password, 6, 25);
   checkEmail(email);
-  checkPasswordsMatch(password, password2)
+  checkPasswordsMatch(password, password2);
 });
